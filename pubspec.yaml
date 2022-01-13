@@ -80,10 +80,7 @@ flutter:
   fonts:
     - family: NanumSquareRoundEB
       fonts:
-        - asset: fonts/NanumSquareRoundEB.ttf
-    - family: BlackHanSans-Regular
-      fonts:
-        - asset: fonts/BlackHanSans-Regular
+        - asset: assets/fonts/NanumSquareRoundEB.ttf
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
