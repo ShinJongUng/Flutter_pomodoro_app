@@ -5,5 +5,5 @@
 ## Getting Started
 
 This project is a starting point for a Flutter application.
-플러터를 통해 개발되었습니다.
+플러터를 통해 개발되었습니다. <br>
 <img src="/readmefolder/first.gif" width="300" height="640"/>
