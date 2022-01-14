@@ -4,6 +4,9 @@ import 'package:flutter/cupertino.dart';
 
 //dart 편의 패키지
 import 'package:provider/provider.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'dart:async';
+import 'notification.dart';
 
 //dart sub
 import 'mainStyle.dart' as mainStyle;
@@ -13,14 +16,11 @@ import 'indexPage/second_page.dart';
 import 'indexPage/third_page.dart';
 
 void main() {
-  runApp(MultiProvider(providers: [
-    ChangeNotifierProvider(create: (c) =>class1()),
-  ],
-    child: MaterialApp(
+  runApp(MaterialApp(
       theme: mainStyle.mainTheme,
       home: MyApp()
     ),
-  ));
+  );
 }
 
 
@@ -40,6 +40,7 @@ class _MyAppState extends State<MyApp> {
   void initState() {
     // TODO: implement initState
     super.initState();
+    initNotification();
     pageIndex = 1;
   }
 
@@ -77,7 +78,7 @@ class mainAppBar extends StatelessWidget implements PreferredSizeWidget {
   @override
   Widget build(BuildContext context) {
     return AppBar(
-      title: Text("Focus On"),
+      title: Text("Focus it"),
     );
   }
 }
@@ -95,6 +96,7 @@ class mainBody extends StatefulWidget {
 class _mainBodyState extends State<mainBody> {
 
 
+
   @override
   Widget build(BuildContext context) {
     return PageView(
@@ -104,7 +106,7 @@ class _mainBodyState extends State<mainBody> {
           widget.pageChanged(value);
         });
       },
-      children: const [
+      children: const[
         analyzePage(),
         timerPage(),
         accountPage(),
@@ -150,6 +152,3 @@ class _mainBottomBarState extends State<mainBottomBar> {
 
 
 
-class class1 extends ChangeNotifier {
-
-}
