@@ -8,6 +8,11 @@ import 'package:google_fonts/google_fonts.dart';
 import 'dart:async';
 import 'notification.dart';
 
+//dart firebase
+import 'package:firebase_core/firebase_core.dart';
+import 'package:firebase_auth/firebase_auth.dart';
+import 'firebase_options.dart';
+
 //dart sub
 import 'mainStyle.dart' as mainStyle;
 //dart indexPage 폴더
@@ -15,7 +20,11 @@ import 'indexPage/first_page.dart';
 import 'indexPage/second_page.dart';
 import 'indexPage/third_page.dart';
 
-void main() {
+void main() async{
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp(
+      options: DefaultFirebaseOptions.currentPlatform
+  );
   runApp(MaterialApp(
       theme: mainStyle.mainTheme,
       home: MyApp()
@@ -41,6 +50,7 @@ class _MyAppState extends State<MyApp> {
     // TODO: implement initState
     super.initState();
     initNotification();
+
     pageIndex = 1;
   }
 

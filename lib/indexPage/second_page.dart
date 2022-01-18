@@ -32,7 +32,7 @@ class _timerPageState extends State<timerPage> {
   Widget build(BuildContext context) {
     return SizedBox.expand(
       child: Container(
-        color: Color(isRest?0xff2E3C7E:0xffFBEAEB),
+        color: Color(isRest?0xff2E3C7E:0xffffff),
         child: _buildBody()
       )
 
@@ -57,7 +57,7 @@ class _timerPageState extends State<timerPage> {
                   children: <Widget>[
                     Text(
                       '$minuteCount:${secondCount >= 0 && secondCount < 10 ? '0$secondCount' : secondCount}',
-                      style: GoogleFonts.nanumGothic(textStyle: TextStyle(fontSize: 100.0, fontWeight: FontWeight.w500, color: Color(isRest?0xffFBEAEB:0xff2E3C7E))),
+                      style: GoogleFonts.nanumGothic(textStyle: TextStyle(fontSize: 100.0, fontWeight: FontWeight.w500, color: Color(isRest?0xffffffff:0xff2E3C7E))),
                     ),
                   ],
                 ),
@@ -67,18 +67,18 @@ class _timerPageState extends State<timerPage> {
               left: 10,
               bottom: 20,
               child: FloatingActionButton(
-                backgroundColor: Color(isRest?0xffFBEAEB:0xff2E3C7E),
+                backgroundColor: Color(isRest?0xffffffff:0xff2E3C7E),
                 onPressed: _clickResetButton,
-                child: Icon(Icons.rotate_left, color: Color(isRest?0xff2E3C7E:0xffFBEAEB)),
+                child: Icon(Icons.rotate_left, color: Color(isRest?0xff2E3C7E:0xffffffff)),
               ),
             ),
             Positioned(
               right: 10,
               bottom: 20,
               child: FloatingActionButton(
-                backgroundColor: Color(isRest?0xffFBEAEB:0xff2E3C7E),
+                backgroundColor: Color(isRest?0xffffffff:0xff2E3C7E),
                 onPressed: _clickPlayButton,
-                child: Icon(isRunning? Icons.pause:Icons.play_arrow, color: Color(isRest?0xff2E3C7E:0xffFBEAEB)),
+                child: Icon(isRunning? Icons.pause:Icons.play_arrow, color: Color(isRest?0xff2E3C7E:0xffffffff)),
               ),
             ),
           ],

@@ -4,7 +4,7 @@ import 'package:flutter/cupertino.dart';
 
 var mainTheme = ThemeData(
     appBarTheme: AppBarTheme(
-      color: Color(0xffFBEAEB),
+      color: Colors.white,
       titleTextStyle:TextStyle(fontFamily: "NanumSquareRoundEB", color:  Color(0xff2E3C7E), fontSize: 25),
     ),
     bottomNavigationBarTheme: BottomNavigationBarThemeData(

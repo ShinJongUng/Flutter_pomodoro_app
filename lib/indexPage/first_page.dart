@@ -22,7 +22,7 @@ class analyzePage extends StatelessWidget {
     return SizedBox.expand(
       child: SingleChildScrollView(
         child: Container(
-          color: Color(0xffFBEAEB),
+          color: Color(0xffffffff),
           child: Padding(
             padding: const EdgeInsets.all(16.0),
             child: Column(
