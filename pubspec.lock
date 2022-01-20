@@ -262,7 +262,7 @@ packages:
       name: flutter_svg
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "1.0.1"
+    version: "1.0.2"
   flutter_test:
     dependency: "direct dev"
     description: flutter
@@ -336,13 +336,6 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "0.6.3"
-  linked_scroll_controller:
-    dependency: transitive
-    description:
-      name: linked_scroll_controller
-      url: "https://pub.dartlang.org"
-    source: hosted
-    version: "0.2.0"
   matcher:
     dependency: transitive
     description:
@@ -551,6 +544,20 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.1.0"
+  syncfusion_flutter_charts:
+    dependency: "direct main"
+    description:
+      name: syncfusion_flutter_charts
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "19.4.43"
+  syncfusion_flutter_core:
+    dependency: transitive
+    description:
+      name: syncfusion_flutter_core
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "19.4.43+1"
   term_glyph:
     dependency: transitive
     description:
@@ -565,13 +572,6 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "0.4.3"
-  time_chart:
-    dependency: "direct main"
-    description:
-      name: time_chart
-      url: "https://pub.dartlang.org"
-    source: hosted
-    version: "0.3.1"
   timezone:
     dependency: transitive
     description:
@@ -579,13 +579,6 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "0.8.0"
-  touchable:
-    dependency: transitive
-    description:
-      name: touchable
-      url: "https://pub.dartlang.org"
-    source: hosted
-    version: "1.0.0"
   twitter_login:
     dependency: transitive
     description:
@@ -613,7 +606,7 @@ packages:
       name: win32
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "2.3.3"
+    version: "2.3.6"
   xdg_directories:
     dependency: transitive
     description:
