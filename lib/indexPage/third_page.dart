@@ -7,6 +7,9 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutterfire_ui/auth.dart';
 
+//dart 다른 index
+import 'authPage/login_page.dart';
+
 class accountPage extends StatelessWidget {
   const accountPage({Key? key}) : super(key: key);
 
@@ -17,9 +20,7 @@ class accountPage extends StatelessWidget {
         stream: FirebaseAuth.instance.authStateChanges(),
         builder: (context, snapshot){
           if(!snapshot.hasData){
-            return SignInScreen(providerConfigs: [
-              EmailProviderConfiguration()
-            ]);
+            return loginPage();
           }
           return ListView(
             children: [
