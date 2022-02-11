@@ -1,4 +1,4 @@
-# pomodoro_timer
+# pomodoro_timer (잠시 중단)
 
 공부 시간 기록 및 집중을 위한 포모도로 타이머 앱을 개발합니다.
 
